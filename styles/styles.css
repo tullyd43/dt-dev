@@ -3,29 +3,74 @@
     border: 1px solid red;
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-nav {
+.navbar {
     display: grid;
     background-color: yellow;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 .navhead {
     text-align: center;
+    background-color: blueviolet;
 }
-.search {
+.searchdiv {
     display: flex;
     justify-content: center;
+    background-color: blueviolet;
+}
+::placeholder {
+    color: rgb(233, 31, 31);
+    opacity: 1;
+}
+input#searchbox{
+    height: 30px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .devlinks {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 20px;
-    height: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 900px;
+    /* width: 800px; */
+    background-color: yellow;
+    justify-items: center;
+    /* overflow: auto; */
+    /* grid-auto-flow: row dense; */
+}
+@media (min-width: 800px) {
+    .devlinks {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 .linkcards {
+    background-color: #f7f7f7;
     margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 170px;
 }
 .devlinks h2{
     color: green;
-    font-size: 24pxpx;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkcards img {
+    height: auto;
+    width: 148px;
+}
+section div p {
+    font-size: 14px;
 }
