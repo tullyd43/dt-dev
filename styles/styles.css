@@ -7,7 +7,7 @@
 }
 .navbar {
     display: grid;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -15,19 +15,44 @@
     text-align: center;
     background-color: blueviolet;
 }
-.searchdiv {
+.searchform {
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 ::placeholder {
-    color: rgb(233, 31, 31);
+    /* color: rgb(233, 31, 31); */
     opacity: 1;
 }
 input#searchbox{
     height: 30px;
     width: 250px;
     font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px ;
+    border: 1px solid black;
+    border-right: none;
+}
+.searchbtn {
+    float: left;
+    border: none;
+    background-color: yellow;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 30px;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.fa.fa-search {
+    background-color: yellow;
+}
+
+.searchbtn:hover {
+    background-color: rgb(245, 245, 117);
+}
+input:focus {
+    outline: 1px solid grey;
 }
 
 .devlinks {
@@ -41,7 +66,7 @@ input#searchbox{
     max-width: 950px;
     gap: 10px;
     /* width: 800px; */
-
+    text-decoration: none;
     justify-items: center;
     /* overflow: auto; */
     /* grid-auto-flow: row dense; */
@@ -57,6 +82,7 @@ input#searchbox{
     padding: 10px;
     border-radius: 10px;
     width: 200px;
+    text-decoration: none;
 }
 .devlinks h2{
     color: green;
@@ -67,6 +93,7 @@ input#searchbox{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .linkcards img {
     height: auto;
@@ -75,5 +102,6 @@ input#searchbox{
 section div p {
     font-size: 14px;
     padding: 8px;
-    height: 100px
+    height: 100px;
+    text-decoration: none;
 }
